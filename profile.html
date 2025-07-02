@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-left">Climate Action</div>
+    <ul class="nav-right">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./volunteer.html">Volunteer</a></li>
+        <li><a href="./data.html">Data</a></li>
+        <li><a href="./profile.html" class="active">Profile</a></li>
+        <li><a href="./feedback.html">Feedback</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./siteMap.html">Site Map</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Profile's</h1>
+</section>
+
+<div class="tabs">
+    <div class="tab active" onclick="openTab('student_1')">Student 1</div>
+    <div class="tab" onclick="openTab('student_2')">Student 2</div>
+    <div class="tab" onclick="openTab('student_3')">Student 3</div>
+    <div class="tab" onclick="openTab('student_4')">Student 4</div>
+</div>
+
+<div id="student_1" class="content-section active">
+    <div class="header">
+        <div class="profile-img">
+            <img class="profile-img" src="../assets/image/haritha.jpg" >
+        </div>
+        <div class="name">Haritha Wikramasinha</div>
+    </div>
+    <div class="about-me card">
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate environmental advocate with a background in marine biology. I've been volunteering with various climate action groups for over 3 years, focusing on ocean conservation and public education about climate change.
+        </p>
+        <p>
+            My goal is to help communities understand the impacts of climate change and empower them with knowledge and tools to make sustainable choices in their daily lives.
+        </p>
+    </div>
+</div>
+
+<div id="student_2" class="content-section">
+    <div class="header">
+        <div class="profile-img">
+            <img class="profile-img" src="../assets/image/haritha.jpg" >
+        </div>
+        <div class="name">Janindu</div>
+    </div>
+    <div class="about-me card">
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate environmental advocate with a background in marine biology. I've been volunteering with various climate action groups for over 3 years, focusing on ocean conservation and public education about climate change.
+        </p>
+        <p>
+            My goal is to help communities understand the impacts of climate change and empower them with knowledge and tools to make sustainable choices in their daily lives.
+        </p>
+    </div>
+</div>
+
+<div id="student_3" class="content-section">
+    <div class="header">
+        <div class="profile-img-section">
+            <img class="profile-img" src="../assets/image/haritha.jpg" >
+        </div>
+        <div class="name">Ishira</div>
+    </div>
+    <div class="about-me card">
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate environmental advocate with a background in marine biology. I've been volunteering with various climate action groups for over 3 years, focusing on ocean conservation and public education about climate change.
+        </p>
+        <p>
+            My goal is to help communities understand the impacts of climate change and empower them with knowledge and tools to make sustainable choices in their daily lives.
+        </p>
+    </div>
+</div>
+
+<div id="student_4" class="content-section">
+    <div class="header">
+        <div class="profile-img">
+            <img class="profile-img" src="../assets/image/haritha.jpg" >
+        </div>
+        <div class="name">Isha</div>
+    </div>
+    <div class="about-me card">
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate environmental advocate with a background in marine biology. I've been volunteering with various climate action groups for over 3 years, focusing on ocean conservation and public education about climate change.
+        </p>
+        <p>
+            My goal is to help communities understand the impacts of climate change and empower them with knowledge and tools to make sustainable choices in their daily lives.
+        </p>
+    </div>
+</div>
+
+<script>
+    function openTab(tabId) {
+        const tabs = document.querySelectorAll('.tab');
+        const sections = document.querySelectorAll('.content-section');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+
+        document.querySelector(`[onclick*="${tabId}"]`).classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <div>
+            <h4>Team Members</h4>
+            <ul>
+                <li><a href="#">Student 1</a></li>
+                <li><a href="#">Student 2</a></li>
+                <li><a href="#">Student 3</a></li>
+                <li><a href="#">Student 4</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 </p>
+        <p><a href="./siteMap.html">Sitemap</a> | <a href="./team.html">Team</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

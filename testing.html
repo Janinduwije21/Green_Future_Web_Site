@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/global.css">
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: #f4f6f8;
+        color: #333;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #3ccf4e, #3498db);
+        padding: 40px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin-bottom: 15px;
+        background-color: #ffffff40;
+        display: inline-block;
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .role {
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    .info-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .info-bar div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .nav-tabs {
+        display: flex;
+        justify-content: center;
+        background: white;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .nav-tabs a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s;
+    }
+
+    .nav-tabs a.active {
+        color: #3ccf4e;
+        border-bottom-color: #3ccf4e;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .about-me, .recent-activity {
+        flex: 2;
+    }
+
+    .impact-stats {
+        flex: 1;
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+    }
+
+    .progress-bar {
+        background: #e0e0e0;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    .progress {
+        height: 8px;
+        border-radius: 4px;
+    }
+
+    .stat {
+        margin-bottom: 20px;
+    }
+
+    .event {
+        margin-bottom: 20px;
+    }
+
+    .event .title {
+        font-weight: 600;
+    }
+
+    .event .date {
+        color: gray;
+        font-size: 13px;
+    }
+
+    .event p {
+        margin-top: 5px;
+    }
+
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+    <div class="profile-img"></div>
+    <div class="name">Emma Johnson</div>
+    <div class="role">Climate Action Volunteer</div>
+    <div class="info-bar">
+        <div>📍 London, UK</div>
+        <div>📆 12 Projects Completed</div>
+        <div>⏰ Member since 2021</div>
+    </div>
+</div>
+
+<div class="nav-tabs">
+    <a href="#" class="active">Overview</a>
+    <a href="#">Skills & Interests</a>
+    <a href="#">Calendar</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="container">
+    <div class="about-me card">
+        <h3>About Me</h3>
+        <p>
+            I'm a passionate environmental advocate with a background in marine biology. I've been volunteering with various climate action groups for over 3 years, focusing on ocean conservation and public education about climate change.
+        </p>
+        <p>
+            My goal is to help communities understand the impacts of climate change and empower them with knowledge and tools to make sustainable choices in their daily lives.
+        </p>
+    </div>
+
+    <div class="impact-stats card">
+        <h3>Impact Stats</h3>
+
+        <div class="stat">
+            <div>Trees Planted <strong style="float:right">145</strong></div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%; background: #2ecc71;"></div>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div>Waste Collected (kg) <strong style="float:right">230</strong></div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%; background: #3498db;"></div>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div>CO₂ Saved (tons) <strong style="float:right">5.8</strong></div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%; background: #f1c40f;"></div>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div>People Educated <strong style="float:right">320</strong></div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 95%; background: #9b59b6;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-activity card">
+        <h3>Recent Activity</h3>
+        <div class="event">
+            <div class="title">📅 Joined Beach Cleanup Event</div>
+            <div class="date">Brighton Beach – May 5, 2023</div>
+            <p>Participated in the annual beach cleanup, collecting over 15kg of plastic waste.</p>
+        </div>
+        <div class="event">
+            <div class="title">🏆 Earned Sustainability Badge</div>
+            <div class="date">April 22, 2023</div>
+            <p>Completed 10 sustainability challenges and earned the "Climate Champion" badge.</p>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

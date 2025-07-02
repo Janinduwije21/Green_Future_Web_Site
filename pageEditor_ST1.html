@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Student 1</title>
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    <link rel="stylesheet" href="CSS/Common.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+        </div>
+        <div class="right-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="Img/Common/search.png" alt="Search" class="icon"> 
+            </div>
+            <div class="hamburger" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="home.html"><img src="Img/Common/home.png" alt="Home" class="icon"> Home</a>
+                <a href="volunteer.html"><img src="Img/Common/volunteer.png" alt="Get Involved" class="icon"> Get Involved</a>
+                <a href="table.html"><img src="Img/Common/table.png" alt="Table" class="icon"> Table</a>
+                <a href="profile.html"><img src="Img/Common/account.png" alt="Profile" class="icon"> Profile</a>
+                <a href="feedback.html"><img src="Img/Common/feedback.png" alt="Feedback" class="icon"> Feedback</a>
+                <a href="team.html"><img src="Img/Common/team.png" alt="Our Team" class="icon"> Our Team</a>
+                <a href="sitemap.html"><img src="Img/Common/sitemap.png" alt="Sitemap" class="icon"> Sitemap</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="stud">
+        <h2>Malith De Silva, Engagement Content Lead</h2>
+    </section>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                <h3>Technical Description</h3>
+                <p>The Splash Page serves as an introductory screen, utilizing HTML5 for structure and CSS3 for styling. A key feature is the <code>&lt;meta http-equiv="refresh" content="4; url=home.html"&gt;</code> tag, which redirects users to the home page after 4 seconds. The page features a full-screen background video implemented with the <code>&lt;video&gt;</code> tag (attributes: <code>autoplay</code>, <code>muted</code>, <code>loop</code>) for an immersive experience. CSS properties like <code>position: absolute</code> and <code>object-fit: cover</code> ensure the video spans the viewport. A circular loader animation was added using CSS <code>@keyframes</code> to indicate loading progress, enhancing user engagement during the redirect.</p>
+                <h3>Accessibility</h3>
+                <p>Accessibility was addressed by including <code>alt</code> attributes for the logo image (<code>alt="Life Below Water splash screen logo"</code>) and fallback text for the video (<code>Your browser does not support the video tag</code>). High-contrast text (white on a dark background) ensures readability, and the <code>tabindex="0"</code> attribute was applied to key elements for keyboard navigation.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#splashVal" target="_blank">View Splash Page Validation Report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="splash.html" target="_blank">Visit Splash Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                <h3>Technical Description</h3>
+                <p>The Volunteer Page was built with a responsive layout using <code>flexbox</code> (<code>display: flex; flex-wrap: wrap</code>) for the card container, ensuring adaptability across devices. The hero section uses a background image with an overlay styled via <code>position: relative</code> and <code>background-color: rgba</code> for text readability. Volunteer opportunity cards leverage <code>&lt;img&gt;</code> tags with <code>object-fit: cover</code> for consistent image sizing, and buttons feature <code>:hover</code> effects (e.g., <code>background-color</code> transitions) for interactivity. A dropdown menu (<code>&lt;select&gt;</code>) enhances usability by allowing sorting of opportunities.</p>
+                <h3>Accessibility</h3>
+                <p>Each card image includes descriptive <code>alt</code> text (e.g., <code>alt="Sea Turtle Conservation"</code>), and the navigation bar supports keyboard focus with <code>tabindex</code>. High contrast ratios were maintained (e.g., white text on dark buttons), and semantic HTML (<code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>) improves screen reader compatibility.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#volunteerVal" target="_blank">View Volunteer Page Validation Report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="volunteer.html" target="_blank">Visit Volunteer Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page (content_ST1.html)</h2>
+                <h3>Technical Description</h3>
+                <p>The Content Page uses semantic HTML (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) to structure information on sustainable fishing. Internal navigation is facilitated by anchor links (<code>&lt;a href="#principles"&gt;</code>) and a fixed "Back to Top" button styled with <code>position: fixed</code> and <code>border-radius</code>. Images are responsive (<code>width: 90%</code> from CSS) and paired with text in a <code>flex</code>-based layout (<code>.content-container</code>). The overlay on the main image uses <code>position: absolute</code> and <code>background-color: rgba</code> for a modern design effect.</p>
+                <h3>Accessibility</h3>
+                <p>Images include <code>alt</code> text (e.g., <code>alt="Content Image"</code>), and the "Back to Top" button has an <code>aria-label="Return to top of page"</code> for screen readers. A logical heading structure (<code>&lt;h1&gt;</code> to <code>&lt;h2&gt;</code>) aids navigation, and text contrast meets WCAG guidelines.</p>
+                <h3>Link to Validation Page</h3>
+                <p><a href="validation_ST1.html#contentVal" target="_blank">View Content Page Validation Report</a></p>
+                <h3>Link to Page</h3>
+                <p><a href="content_ST1.html" target="_blank">Visit Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <p>A challenge with the Splash Page was ensuring consistent redirect timing across browsers, resolved by testing and adjusting the <code>meta</code> refresh value. On the Volunteer Page, aligning cards responsively required tweaking <code>flexbox</code> properties (e.g., <code>flex-basis</code>). The Content Page’s fixed button initially overlapped content, fixed by adjusting <code>z-index</code>. These experiences reinforced the importance of cross-browser testing and early validation for cleaner code.</p>
+            </section>
+
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <p>All pages adhere to HTML5 and CSS3 standards, validated via W3C tools. Accessibility aligns with WCAG 2.1 guidelines (e.g., contrast, keyboard navigation). Content and images are original or royalty-free, with proper attribution, complying with web publication regulations like copyright and accessibility mandates.</p>
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <ul class="ref">
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Accessed: 10 Mar 2025).</li>
+                    <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons.</li>
+                    <li>W3C (2025). <i>Web Accessibility Initiative (WAI).</i> Available at: <a href="https://www.w3.org/WAI/">https://www.w3.org/WAI/</a> (Accessed: 10 Mar 2025).</li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <aside>
+            <h3>Core Pages Developed:</h3>
+            <ul class="top-level-ul">
+                <li>Student 01</li>
+                <ul> 
+                    <li><a href="#splash">Splash Page</a></li>
+                    <li><a href="#volunteer">Volunteer Page</a></li>
+                    <li><a href="#content">Content Page</a></li>
+                </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Content Pages</h4>
+            <ul>
+                <li><a href="content_ST1.html">Content 01</a></li>
+                <li><a href="content_ST2.html">Content 02</a></li>
+                <li><a href="content_ST3.html">Content 03</a></li>
+                <li><a href="content_ST4.html">Content 04</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="logo">
+                <img src="Img/Common/logo.png" alt="Ocean Guardians Logo">
+            </div>
+            <p>Email: <a href="mailto:info@oceanguardians.org">info@oceanguardians.org</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-column">
+            <h4>Page Editors</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 1: Editor Page</a></li>
+                <li><a href="pageEditor_ST2.html">Student 2: Editor Page</a></li>
+                <li><a href="pageEditor_ST3.html">Student 3: Editor Page</a></li>
+                <li><a href="pageEditor_ST4.html">Student 4: Editor Page</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Validation</h4>
+            <ul>
+                <li><a href="validation_ST1.html">Student 1: Validation</a></li>
+                <li><a href="validation_ST2.html">Student 2: Validation</a></li>
+                <li><a href="validation_ST3.html">Student 3: Validation</a></li>
+                <li><a href="validation_ST4.html">Student 4: Validation</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
